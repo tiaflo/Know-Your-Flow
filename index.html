@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Know Your Flow</title>
+  <meta name="description" content="Find free menstrual products nearby, learn about menstrual and reproductive health, and take action on menstrual equity policy. No login, privacy-first." />
+  <meta name="theme-color" content="#FFF8F2" />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Social preview -->
+  <meta property="og:title" content="Know Your Flow" />
+  <meta property="og:description" content="Find. Learn. Act. Menstrual equity in one privacy-first app." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="assets/cover.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="apple-touch-icon" href="assets/icon.png" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%238B7CF6'/%3E%3Cpath d='M50 22 L68 46 A22 22 0 1 1 32 46 Z' fill='%23F7D7E5'/%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="css/theme.css?v=9" />
+  <link rel="stylesheet" href="css/base.css?v=9" />
+  <link rel="stylesheet" href="css/layout.css?v=9" />
+  <link rel="stylesheet" href="css/components.css?v=9" />
+  <link rel="stylesheet" href="css/screens.css?v=9" />
+</head>
+<body>
+  <a class="visually-hidden" href="#app-main">Skip to main content</a>
+
+  <div id="app-frame">
+    <header id="app-header"></header>
+
+    <main id="app-main" role="main" tabindex="-1"></main>
+
+    <button id="fab" type="button" aria-hidden="true" tabindex="-1"></button>
+
+    <nav id="tab-bar" role="navigation" aria-label="Primary navigation"></nav>
+
+    <div id="onboarding-overlay" role="dialog" aria-modal="true" aria-label="Welcome to Know Your Flow"></div>
+  </div>
+
+  <!-- Screen registry, populated by each screen module -->
+  <script>window.Screens = {};</script>
+
+  <!-- Core (order matters: dom → icons → cache → store → api → ui → router → shell) -->
+  <script src="js/core/icons.js?v=9"></script>
+  <script src="js/core/dom.js?v=9"></script>
+  <script src="js/core/cache.js?v=9"></script>
+  <script src="js/core/store.js?v=9"></script>
+  <script src="js/core/cycle-engine.js?v=9"></script>
+
+  <!-- Data -->
+  <script src="js/data/locations.js?v=9"></script>
+  <script src="js/data/learn.js?v=9"></script>
+  <script src="js/data/quizzes.js?v=9"></script>
+  <script src="js/data/policies.js?v=9"></script>
+  <script src="js/data/community.js?v=9"></script>
+  <script src="js/data/health.js?v=9"></script>
+
+  <!-- Core services that depend on data -->
+  <script src="js/core/api.js?v=9"></script>
+  <script src="js/core/ui.js?v=9"></script>
+  <script src="js/core/router.js?v=9"></script>
+  <script src="js/core/shell.js?v=9"></script>
+
+  <!-- Screens -->
+  <script src="js/screens/onboarding.js?v=9"></script>
+  <script src="js/screens/home.js?v=9"></script>
+  <script src="js/screens/cycle.js?v=9"></script>
+  <script src="js/screens/find.js?v=9"></script>
+  <script src="js/screens/learn.js?v=9"></script>
+  <script src="js/screens/act.js?v=9"></script>
+  <script src="js/screens/community.js?v=9"></script>
+  <script src="js/screens/health.js?v=9"></script>
+
+  <!-- Bootstrap -->
+  <script src="js/app.js?v=9"></script>
+</body>
+</html>
